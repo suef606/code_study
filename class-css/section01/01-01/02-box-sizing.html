@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>패딩과 마진 실습</title>
+    <style>
+
+        /* 전체선택자는 *별이다. */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* 디자이너의 요구사항에 따라야함으로 기본적으로 설정된 값을 0으로 만들어놓고 작업을 해야한다. */
+        }
+
+        /* 패딩연습 */
+        .CSS_네모상자1 {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            padding-top: 30px;
+            padding-left: 20px;
+
+            /* box-sizing: content-box;
+            굳이 지정안해줘도 기본값이 content-box이다 */
+
+            box-sizing: border-box;
+            border: 10px solid blue;
+            /* 테두리박스 */
+
+        }
+
+        /* 마진연습 */
+        .CSS_네모상자2 {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+        }
+        .CSS_인풋창 {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        /* 클래스는 .으로 구분 */
+    </style>
+</head>
+<body>
+    <div class="CSS_네모상자1">
+        <input type="text" />
+    </div>
+    <div class="CSS_네모상자2">
+        <input type="text" class="CSS_인풋창"/>
+    </div>
+     
+</body>
+</html>
